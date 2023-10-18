@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        .edit {
+            display: flex;
+            background-color: rgb(207, 235, 244);
+            border-radius: 5px;
+        }
+
+        .edit span {
+            border-radius: 50%;
+            background-color: white;
+            color: blue;
+            height: 50px;
+            width: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #second-kol {
+            background-color: rgb(207, 235, 244);
+            border-radius: 8px;
+        }
+
+        #second-kol input,
+        select,
+        textarea {
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        #second-kol button{
+            width: 98%;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-md-6 col-lg-6 col-sm-12 col-12">
+                <button class="btn btn-light rounded-pill border">Appointment</button>
+                <p class="fs-1 fw-normal">Make An Appointment To visit Our Doctor</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum, sunt
+                    tempore provident voluptatum incidunt asperiores, quaerat
+                    modi voluptates enim sint ullam pariatur numquam.
+                </p>
+                <div class="edit p-3">
+                    <span class="me-3 mt-2"><i class="fa-solid fa-phone"></i></span>
+                    <div style="display: flex; flex-direction: column;">
+                        <p>Call Us Now</p>
+                        <p class="fw-bold">+91 1234567890</p>
+                    </div>
+                </div>
+                <div class="edit mt-3 p-3">
+                    <span class="me-3 mt-2"><i class="fa-solid fa-envelope"></i></span>
+                    <div style="display: flex; flex-direction: column;">
+                        <p>Call Us Now</p>
+                        <p class="fw-bold">+91 1234567890</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-6 col-lg-6 col-sm-12 col-12 p-5" id="second-kol">
+                <input type="text" placeholder="Your Name" size="23">
+                <input type="text" class="ms-2" placeholder="Your Email" size="23">
+                <br>
+                <input type="text" class="mt-3" placeholder="Your Mobile" size="23">
+                <select name="Choose doctor" class="ms-2" id="doctor" style="width: 48%;">
+                    <option value="doctor">Doctor 1</option>
+                    <option value="doctor">Doctor 2</option>
+                </select>
+                <br>
+                <input type="text" class="mt-3" placeholder="Choose Date" size="23">
+                <input type="text" class="ms-2" placeholder="Choose Date" size="23">
+                <br>
+                <textarea class="mt-3 p-2" placeholder="Describe Your problem" cols="58" rows="5">
+                </textarea>
+                <div class="text-center">
+                    <button class="btn btn-primary fw-bold p-2 mt-2">Book Appointment</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
